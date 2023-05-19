@@ -11,9 +11,9 @@ Siga as instruções abaixo para executar o projeto em sua máquina:
 2. Abra o console e navegue até o diretório em que deseja clonar o repositório.
 
 3. Clone o repositório executando o seguinte comando:
-`git clone https://github.com/bertoldoklinger/ConvertTemperatures-Ativ-Eng-Software-UFMA-.git`
+`git clone https://github.com/bertoldoklinger/convertTemperatures.git`
 4. Entre na posta do repositório com: 
-`cd ConvertTemperatures-Ativ-Eng-Software-UFMA-`
+`cd convertTemperatures`
 
 5. Execute o comando `npm install` para instalar as dependências necessárias.
 
