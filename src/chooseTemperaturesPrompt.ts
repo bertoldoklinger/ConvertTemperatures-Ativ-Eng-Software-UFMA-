@@ -7,7 +7,7 @@ const readline = createInterface({
 });
 
 readline.question('Qual temperatura você deseja converter? (celsius ou fahrenheit) ', choice => {
-  if (choice === 'celsius') {
+  if (choice.toLowerCase() === 'celsius') {
     readline.question('Digite a temperatura em graus Celsius: ', value => {
       const convertTemperatures = new ConvertTemperatures();
       const result = convertTemperatures.convertCelsiusToFahrenheit(Number(value));
@@ -15,7 +15,7 @@ readline.question('Qual temperatura você deseja converter? (celsius ou fahrenhe
       console.log(`O valor em Fahrenheit é: ${result.toFixed(2)}`);
       readline.close();
     });
-  } else if (choice === 'fahrenheit') {
+  } else if (choice.toLowerCase() === 'fahrenheit') {
     readline.question('Digite a temperatura em graus Fahrenheit: ', value => {
       const convertTemperatures = new ConvertTemperatures();
       const result = convertTemperatures.convertFahrenheitToCelsius(Number(value));
